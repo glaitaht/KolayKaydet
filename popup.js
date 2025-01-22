@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             
             try {
                 // Screenshot al
-                const screenshot = await chrome.tabs.captureVisibleTab();
+                const screenshot = await chrome.tabs.captureVisibleTab(null, {
+                    format: 'jpeg',
+                    quality: 100
+                });
                 const base64Image = screenshot.replace(/^data:image\/jpeg;base64,/, '');
                 
                 // Tüm açık sekmeleri al

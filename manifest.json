@@ -9,10 +9,14 @@
     "tabs",
     "activeTab",
     "contextMenus",
-    "windows"
+    "windows",
+    "<all_urls>"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "background": {
-      "service_worker": "main.js"
+      "scripts": ["main.js"]
   },
   "icons": { 
     "16": "images/kk-logo-16x16.png",
