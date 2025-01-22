@@ -1,0 +1,162 @@
+{
+    "name": {
+        "message": "Kolay Kaydet",
+        "description": "name of the extension"
+    },
+    "description": {
+        "message": "Bu uzantı sayesinde dilediğiniz websitelerini anlık kaydedebilir, hatırlatmalar kurabilir, kaydetme sebebinizi not edebilirsiniz.",
+        "description": "description of the extension"
+    },
+    "baseURL": {
+        "message": "http://www.kolaykaydet.com",
+        "description": "url to website of saved items"
+    },
+    "settingsURL": {
+        "message": "http://www.kolaykaydet.com/settings",
+        "description": "url to settings of extension"
+    },
+    "aboutUsURL": {
+        "message": "http://www.kolaykaydet.com/aboutUs",
+        "description": "url to about us"
+    },
+    "goToWebsite": {
+        "message": "Bu Sayfayı Kaydet",
+        "description": "save current page button text"
+    },
+    "goToWebsiteDescription": {
+        "message": "Mevcut sayfayı ekran görüntüsü ve açık sekmelerle birlikte kaydet.",
+        "description": "save current page description"
+    },
+    "goToSettings": {
+        "message": "Kayıtları Görüntüle",
+        "description": "view records button text"
+    },
+    "goToSettingsDescription": {
+        "message": "Kayıtlarını görüntüle, yönet ve dışa aktar.",
+        "description": "view records description"
+    },
+    "goToAboutUs": {
+        "message": "Hakkımızda",
+        "description": "about us button text"
+    },
+    "goToAboutUsDescription": {
+        "message": "Bizi ve projemizi daha yakından tanı.",
+        "description": "about us description"
+    },
+    "savePageTitle": {
+        "message": "Sayfayı Kaydet",
+        "description": "save page window title"
+    },
+    "titleLabel": {
+        "message": "Başlık",
+        "description": "title input label"
+    },
+    "reasonLabel": {
+        "message": "Kaydetme Sebebi",
+        "description": "reason textarea label"
+    },
+    "openTabsLabel": {
+        "message": "Açık Sekmeler",
+        "description": "open tabs section label"
+    },
+    "selectAllTabs": {
+        "message": "Tümünü Seç",
+        "description": "select all tabs button text"
+    },
+    "cancelButton": {
+        "message": "İptal",
+        "description": "cancel button text"
+    },
+    "saveButton": {
+        "message": "Kaydet",
+        "description": "save button text"
+    },
+    "recordsTitle": {
+        "message": "Kayıtlarım",
+        "description": "records page title"
+    },
+    "importButton": {
+        "message": "İçe Aktar",
+        "description": "import button text"
+    },
+    "exportButton": {
+        "message": "Dışa Aktar",
+        "description": "export button text"
+    },
+    "importTooltip": {
+        "message": "Başka bir cihazdan dışa aktardığınız kayıtları buraya yükleyebilirsiniz",
+        "description": "import button tooltip"
+    },
+    "exportTooltip": {
+        "message": "Tüm kayıtlarınızı yedeklemek veya başka bir cihaza aktarmak için dışa aktarabilirsiniz",
+        "description": "export button tooltip"
+    },
+    "noRecords": {
+        "message": "Henüz Kayıt Yok",
+        "description": "empty state title"
+    },
+    "noRecordsDesc": {
+        "message": "Kaydettiğiniz sayfalar burada görünecek.",
+        "description": "empty state description"
+    },
+    "savedTabs": {
+        "message": "Kaydedilen Sekmeler",
+        "description": "saved tabs section title in modal"
+    },
+    "deleteButton": {
+        "message": "Sil",
+        "description": "delete button text"
+    },
+    "closeButton": {
+        "message": "Kapat",
+        "description": "close button text"
+    },
+    "deleteConfirm": {
+        "message": "Bu kaydı silmek istediğinizden emin misiniz?",
+        "description": "delete confirmation message"
+    },
+    "importSuccess": {
+        "message": "Kayıtlar başarıyla içe aktarıldı.",
+        "description": "import success message"
+    },
+    "importError": {
+        "message": "Geçersiz dosya formatı veya bozuk dosya.",
+        "description": "import error message"
+    },
+    "errorScreenshot": {
+        "message": "Screenshot yüklenirken hata",
+        "description": "screenshot loading error message"
+    },
+    "errorTabs": {
+        "message": "Tablar yüklenirken hata",
+        "description": "tabs loading error message"
+    },
+    "errorSave": {
+        "message": "Kayıt sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "description": "save error message"
+    },
+    "errorBootstrap": {
+        "message": "Bootstrap bileşenleri başlatılırken hata",
+        "description": "bootstrap initialization error message"
+    },
+    "errorRecordsLoad": {
+        "message": "Kayıtlar yüklenirken bir hata oluştu",
+        "description": "records loading error message"
+    },
+    "errorRecordDelete": {
+        "message": "Kayıt silinirken bir hata oluştu",
+        "description": "record deletion error message"
+    },
+    "errorExport": {
+        "message": "Dışa aktarma sırasında bir hata oluştu",
+        "description": "export error message"
+    },
+    "errorFileRead": {
+        "message": "Dosya okunurken bir hata oluştu",
+        "description": "file reading error message"
+    },
+    "exportFileName": {
+        "message": "kolaykaydet_{date}.json",
+        "description": "export file name format"
+    }
+}

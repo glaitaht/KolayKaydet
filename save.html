@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-localize="__MSG_savePageTitle__">Sayfayı Kaydet</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+        }
+        .screenshot-container {
+            max-height: 300px;
+            overflow-y: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .screenshot-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .form-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .tabs-container {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .custom-checkbox .form-check-input:checked {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="screenshot-container mb-3">
+                    <img id="screenshot" class="screenshot-img" alt="Screenshot" data-localize="__MSG_screenshot__">
+                </div>
+                
+                <div class="form-container">
+                    <form id="saveForm">
+                        <div class="mb-3">
+                            <label for="title" class="form-label" data-localize="__MSG_titleLabel__">
+                                <i class="bi bi-bookmark-fill me-1"></i>
+                                Başlık
+                            </label>
+                            <input type="text" class="form-control" id="title" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="description" class="form-label" data-localize="__MSG_reasonLabel__">
+                                <i class="bi bi-card-text me-1"></i>
+                                Kaydetme Sebebi
+                            </label>
+                            <textarea class="form-control" id="description" rows="3" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label d-flex align-items-center">
+                                <i class="bi bi-collection me-1"></i>
+                                <span data-localize="__MSG_openTabsLabel__">Açık Sekmeler</span>
+                                <button type="button" class="btn btn-sm btn-outline-primary ms-2" id="selectAllTabs" data-localize="__MSG_selectAllTabs__">
+                                    Tümünü Seç
+                                </button>
+                            </label>
+                            <div class="tabs-container" id="tabsContainer">
+                                <!-- Tabs will be inserted here -->
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="button" class="btn btn-outline-secondary" id="cancelButton" data-localize="__MSG_cancelButton__">
+                                <i class="bi bi-x-circle me-1"></i>
+                                İptal
+                            </button>
+                            <button type="submit" class="btn btn-primary" data-localize="__MSG_saveButton__">
+                                <i class="bi bi-save me-1"></i>
+                                Kaydet
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="save.js"></script>
+</body>
+</html>

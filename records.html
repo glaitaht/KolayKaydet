@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-localize="__MSG_recordsTitle__">Kayıtlarım</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            padding-bottom: 2rem;
+        }
+        .record-card {
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .record-card:hover {
+            transform: translateY(-2px);
+        }
+        .screenshot-preview {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .tabs-preview {
+            max-height: 100px;
+            overflow-y: auto;
+        }
+        .tab-item {
+            font-size: 0.9rem;
+        }
+        .actions-bar {
+            background: white;
+            border-bottom: 1px solid #dee2e6;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .empty-state i {
+            font-size: 48px;
+            color: #6c757d;
+        }
+        #modalScreenshot {
+            max-height: 400px;
+            object-fit: contain;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="actions-bar py-3 mb-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="mb-0" data-localize="__MSG_recordsTitle__">
+                    <i class="bi bi-collection me-2"></i>
+                    Kayıtlarım
+                </h4>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary" id="importBtn" 
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                            data-bs-title="__MSG_importTooltip__">
+                        <i class="bi bi-upload me-1"></i>
+                        <span data-localize="__MSG_importButton__">İçe Aktar</span>
+                    </button>
+                    <button class="btn btn-outline-primary" id="exportBtn"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                            data-bs-title="__MSG_exportTooltip__">
+                        <i class="bi bi-download me-1"></i>
+                        <span data-localize="__MSG_exportButton__">Dışa Aktar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-4" id="recordsContainer">
+            <!-- Kayıtlar buraya dinamik olarak eklenecek -->
+        </div>
+
+        <!-- Boş durum gösterimi -->
+        <div class="empty-state d-none" id="emptyState">
+            <i class="bi bi-inbox mb-3 d-block"></i>
+            <h5 data-localize="__MSG_noRecords__">Henüz Kayıt Yok</h5>
+            <p class="text-muted" data-localize="__MSG_noRecordsDesc__">Kaydettiğiniz sayfalar burada görünecek.</p>
+        </div>
+    </div>
+
+    <!-- Kayıt Detay Modalı -->
+    <div class="modal fade" id="recordDetailModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalScreenshot" class="img-fluid rounded mb-3" alt="Screenshot">
+                    <p class="text-muted mb-3" id="modalDescription"></p>
+                    
+                    <h6 class="mb-2" data-localize="__MSG_savedTabs__">
+                        <i class="bi bi-collection me-1"></i>
+                        Kaydedilen Sekmeler
+                    </h6>
+                    <div class="list-group" id="modalTabs"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="deleteRecordBtn" data-localize="__MSG_deleteButton__">
+                        <i class="bi bi-trash me-1"></i>
+                        Sil
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-localize="__MSG_closeButton__">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dosya Yükleme Input'u (gizli) -->
+    <input type="file" id="importInput" accept=".json" style="display: none;">
+
+    <!-- jQuery ve Bootstrap JS -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="records.js"></script>
+</body>
+</html> 

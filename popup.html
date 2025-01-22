@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-localize="__MSG_name__">Kolay Kaydet</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            src: url('fonts/Montserrat-Medium.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            src: url('fonts/Montserrat-SemiBold.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            src: url('fonts/Montserrat-Bold.woff2') format('woff2');
+        }
+        
+        :root{
+            --accent: #61c1e8;
+            --accent-alpha: #61c1e8bb;
+            --text: #000;
+            --text-secondary: #000000cc;
+            --container: #fff;
+            --section-color: #fff;
+        }
+        
+        html, body{
+            position: relative;
+            inset: 0;
+            min-width: 400px;
+            min-height: 200px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        html{
+            color: var(--text);
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.28em;
+            font-weight: 500;
+            display: block;
+            background-image: radial-gradient(circle at 50%, #fff, #eee);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        
+        body{
+            display: grid;
+            place-items: center;
+            background-color: transparent;
+        }
+        
+        main{
+            position: relative;
+            inset: 0;
+            max-width: 950px;
+            min-width: 280px;
+            margin: 0em 2.5em 1.5em 2.5em;
+        }
+        
+        h1, h2{
+            padding: 0;
+            margin: 0;
+            margin-top: -0.3ch; 
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        h2{
+            font-size: 1em;
+        }
+        
+        h1::before, h2::before{
+            content: "#"; 
+            color: var(--text-secondary);
+            font-size: 0.8em;
+        }
+        
+        h2::before{
+            font-size: 1em;
+        }
+        
+        p{
+            margin: 1em 0;
+            line-height: 1.7;
+        }
+        
+        input{
+            position: relative;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            margin: 0 -7px; 
+        }
+        
+        input:checked + label{
+            color: var(--accent);
+        }
+        
+        input:checked + label::before{
+            transform: translateY(30%) scaleX(1);
+            transform-origin: left top;
+        }
+        
+        input:focus-visible + label{
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
+        }
+        
+        label{
+            position: relative;
+            margin: 0 0.6em 1em 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color ease 0.4s;
+            color: var(--text-secondary);
+            display: inline-block;
+        }
+        
+        label::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translateY(30%) scaleX(0);
+            width: 100%;
+            height: 0.72em;
+            background-color: currentColor;
+            z-index: -1;
+            transform-origin: right top;
+            transition: transform ease 0.4s;
+            opacity: 0.4;
+        }
+        
+        label:hover{
+            color: var(--text);
+        }
+        
+        .container{
+            position: relative;
+            width: 100%;
+            background-color: var(--container);
+            border-radius: 4px;
+            box-shadow: 0.8em 0.8em 0 0 var(--accent-alpha);
+            border: 2px solid var(--accent);
+            margin-top: 1.5em;
+            padding: 0 2em;
+            box-sizing: border-box;
+        }
+        
+        .container section{
+            margin: 1.8em 0;
+        }
+        
+        .container div{
+            margin-top: 0.5em;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration:none;
+        }
+        
+        .btn-action {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3 data-localize="__MSG_name__" style="color: #61c1e8;margin-top: 16px; margin-bottom: -16px;">Kolay Kaydet</h3>
+    <main>
+        <section>
+            <div class="container">
+                <section>
+                    <h2  id="savePageBtn" data-localize="__MSG_goToWebsite__">Bu sayfayı kaydet</h2>
+                    <div data-localize="__MSG_goToWebsiteDescription__">Kaydettiklerini görebileceğin ve düzenleme yapabileceğin websitemizi açar.</div>
+                </section>
+                
+                <section>
+                    <h2 id="viewRecordsBtn" data-localize="__MSG_goToSettings__">Kayıtları görüntüle</h2>
+                    <div data-localize="__MSG_goToSettingsDescription__">Ayarları ve varsayılanları değiştirmek için ayarlar ekranını açar.</div>
+                </section>
+                
+                <section>
+                    <a href="https://www.kolaykaydet.com/hakkimizda" target="_blank"><h2 data-localize="__MSG_goToAboutUs__">Hakkımızda</h2></a>
+                    <div data-localize="__MSG_goToAboutUsDescription__">Bizi merak ediyorsan hakkımızda bir şeyler öğrenebileceğin bir sayfa açar.</div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

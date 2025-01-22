@@ -1,0 +1,162 @@
+{
+    "name": {
+        "message": "Easly Save It",
+        "description": "name of the extension"
+    },
+    "description": {
+        "message": "With this extension, you can instantly save any website you want, set reminders, and note the reason for saving.",
+        "description": "description of the extension"
+    },
+    "baseURL": {
+        "message": "http://www.easlysave.it",
+        "description": "url to website of saved items"
+    },
+    "settingsURL": {
+        "message": "http://www.easlysave.com/settings",
+        "description": "url to settings of extension"
+    },
+    "aboutUsURL": {
+        "message": "http://www.easlysave.com/aboutUs",
+        "description": "url to about us"
+    },
+    "goToWebsite": {
+        "message": "Save This Page",
+        "description": "save current page button text"
+    },
+    "goToWebsiteDescription": {
+        "message": "Save the current page with a screenshot and open tabs.",
+        "description": "save current page description"
+    },
+    "goToSettings": {
+        "message": "View Records",
+        "description": "view records button text"
+    },
+    "goToSettingsDescription": {
+        "message": "View, manage, and export your saved records.",
+        "description": "view records description"
+    },
+    "goToAboutUs": {
+        "message": "About Us",
+        "description": "about us button text"
+    },
+    "goToAboutUsDescription": {
+        "message": "Learn more about us and our project.",
+        "description": "about us description"
+    },
+    "savePageTitle": {
+        "message": "Save Page",
+        "description": "save page window title"
+    },
+    "titleLabel": {
+        "message": "Title",
+        "description": "title input label"
+    },
+    "reasonLabel": {
+        "message": "Reason for Saving",
+        "description": "reason textarea label"
+    },
+    "openTabsLabel": {
+        "message": "Open Tabs",
+        "description": "open tabs section label"
+    },
+    "selectAllTabs": {
+        "message": "Select All",
+        "description": "select all tabs button text"
+    },
+    "cancelButton": {
+        "message": "Cancel",
+        "description": "cancel button text"
+    },
+    "saveButton": {
+        "message": "Save",
+        "description": "save button text"
+    },
+    "recordsTitle": {
+        "message": "My Records",
+        "description": "records page title"
+    },
+    "importButton": {
+        "message": "Import",
+        "description": "import button text"
+    },
+    "exportButton": {
+        "message": "Export",
+        "description": "export button text"
+    },
+    "importTooltip": {
+        "message": "Import records from another device or backup",
+        "description": "import button tooltip"
+    },
+    "exportTooltip": {
+        "message": "Export your records for backup or transfer to another device",
+        "description": "export button tooltip"
+    },
+    "noRecords": {
+        "message": "No Records Yet",
+        "description": "empty state title"
+    },
+    "noRecordsDesc": {
+        "message": "Your saved pages will appear here.",
+        "description": "empty state description"
+    },
+    "savedTabs": {
+        "message": "Saved Tabs",
+        "description": "saved tabs section title in modal"
+    },
+    "deleteButton": {
+        "message": "Delete",
+        "description": "delete button text"
+    },
+    "closeButton": {
+        "message": "Close",
+        "description": "close button text"
+    },
+    "deleteConfirm": {
+        "message": "Are you sure you want to delete this record?",
+        "description": "delete confirmation message"
+    },
+    "importSuccess": {
+        "message": "Records imported successfully.",
+        "description": "import success message"
+    },
+    "importError": {
+        "message": "Invalid file format or corrupted file.",
+        "description": "import error message"
+    },
+    "errorScreenshot": {
+        "message": "Error loading screenshot",
+        "description": "screenshot loading error message"
+    },
+    "errorTabs": {
+        "message": "Error loading tabs",
+        "description": "tabs loading error message"
+    },
+    "errorSave": {
+        "message": "An error occurred while saving. Please try again.",
+        "description": "save error message"
+    },
+    "errorBootstrap": {
+        "message": "Error initializing Bootstrap components",
+        "description": "bootstrap initialization error message"
+    },
+    "errorRecordsLoad": {
+        "message": "Error loading records",
+        "description": "records loading error message"
+    },
+    "errorRecordDelete": {
+        "message": "Error deleting record",
+        "description": "record deletion error message"
+    },
+    "errorExport": {
+        "message": "Error during export",
+        "description": "export error message"
+    },
+    "errorFileRead": {
+        "message": "Error reading file",
+        "description": "file reading error message"
+    },
+    "exportFileName": {
+        "message": "easlysave_{date}.json",
+        "description": "export file name format"
+    }
+}
