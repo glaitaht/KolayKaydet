@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolay Kaydet - Tarayıcı Kayıtlarınızı Yönetin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <img src="icons/kk-logo-256x256.png" alt="Kolay Kaydet Logo" class="logo-icon">
+                Kolay Kaydet
+            </a>
+            <button class="mobile-menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#features" data-i18n="nav.features">Özellikler</a></li>
+                <li><a href="#how-to" data-i18n="nav.howTo">Nasıl Kullanılır</a></li>
+                <li><a href="#video-tanitim" data-i18n="nav.video">Video Tanıtım</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+                <li class="language-switch">
+                    <span class="language-label active" data-lang="tr">TR</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="language-label" data-lang="en">EN</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 data-i18n="hero.title">Tarayıcı Kayıtlarınızı Kolayca Yönetin</h1>
+            <p data-i18n="hero.description">Kolay Kaydet ile tarayıcı kayıtlarınızı tek tıkla organize edin, yedekleyin ve geri yükleyin.</p>
+            <a href="#" class="cta-button" data-i18n="hero.cta">Hemen Başla</a>
+        </section>
+
+        <section class="features" id="features">
+            <h2 data-i18n="features.title">Özellikler</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <img src="icons/save.svg" alt="Yedekleme">
+                    <h3 data-i18n="features.cards.backup.title">Kolay Yedekleme</h3>
+                    <p data-i18n="features.cards.backup.description">Tüm kayıtlarınızı güvenle yedekleyin ve istediğiniz zaman geri yükleyin.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="icons/organize.svg" alt="Senkronizasyon">
+                    <h3 data-i18n="features.cards.sync.title">Cihazlar Arası Senkronizasyon</h3>
+                    <p data-i18n="features.cards.sync.description">Kayıtlarınıza tüm cihazlarınızdan erişin ve senkronize edin.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="icons/share.svg" alt="Organizasyon">
+                    <h3 data-i18n="features.cards.organize.title">Akıllı Organizasyon</h3>
+                    <p data-i18n="features.cards.organize.description">Kayıtlarınızı kategorilere ayırın ve kolayca düzenleyin.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to" id="how-to">
+            <h2 data-i18n="howTo.title">Nasıl Kullanılır</h2>
+            <div class="steps">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howTo.steps.1.title">Eklentiyi Yükleyin</h3>
+                        <p data-i18n="howTo.steps.1.description">Chrome Web Mağazası'ndan Kolay Kaydet eklentisini indirin ve yükleyin.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howTo.steps.2.title">Hesap Oluşturun</h3>
+                        <p data-i18n="howTo.steps.2.description">Hızlıca ücretsiz bir hesap oluşturun ve eklentiyi aktif edin.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howTo.steps.3.title">Kaydetmeye Başlayın</h3>
+                        <p data-i18n="howTo.steps.3.description">Tek tıkla kayıtlarınızı yedekleyin ve organize edin.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howTo.steps.4.title">Kaydetmeye Başlayın</h3>
+                        <p data-i18n="howTo.steps.4.description">Tek tıkla kayıtlarınızı yedekleyin ve organize edin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section" id="video-tanitim">
+            <h2 data-i18n="video.title">Video Tanıtım</h2>
+            <p data-i18n="video.description">Kolay Kaydet'i nasıl kullanacağınızı görsel olarak öğrenin.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/py_rZfuhw5w" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 data-i18n="contact.title">İletişim</h2>
+            <p data-i18n="contact.description">Sorularınız için bize ulaşın.</p>
+            <a href="mailto:me@glaitaht.com" class="contact-button" data-i18n="contact.button">İletişime Geç</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Kolay Kaydet - <span data-i18n="footer.copyright">Tüm hakları saklıdır.</span></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/localization.js"></script>
+</body>
+</html> 
